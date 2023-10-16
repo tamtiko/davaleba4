@@ -1,5 +1,5 @@
 class Student:
-    university = "Tbilisi State Medical University""
+    university = "Tbilisi State Medical University"
 
     def __init__(self, name: str, grade: int, age: int):
         self.name = name
@@ -7,7 +7,7 @@ class Student:
         self.age = age
 
     def __str__(self):
-        return f"Name: {self.name}, Age: {self.age}, Grade: {self.grade}"
+        return f"Name: {self.name}, Grade: {self.grade},Age: {self.age}"
 
     @property
     def is_passing(self):
@@ -16,12 +16,12 @@ class Student:
     def increase_grade(self, increase_by):
         self.grade += increase_by
         
-study = Student("Nick", 70, 10)
+stu = Student("Tamta", 70, 25)
 
-print(study.university)
+print(stu.university)
 
-print(study.is_passing)
+print(stu.is_passing)
 
-study.increase_grade(10)
+stu.increase_grade(10)
 
-print(study.grade)
+print(stu.grade)
