@@ -16,12 +16,12 @@ class Student:
     def increase_grade(self, increase_by):
         self.grade += increase_by
         
-stu = Student("Tamta", 70, 25)
+study = Student("Tamta", 70, 25)
 
-print(stu.university)
+print(study.university)
 
-print(stu.is_passing)
+print(study.is_passing)
 
-stu.increase_grade(10)
+study.increase_grade(10)
 
-print(stu.grade)
+print(study.grade)
